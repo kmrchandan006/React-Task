@@ -1,5 +1,4 @@
-/* Style for the Parent Component */
-.parent-container {
+/* .parent-container {
     padding: 20px;
     background-color: #f9f9f9;
     border: 2px solid #ddd;
@@ -29,7 +28,7 @@
     background-color: #0056b3;
   }
   
-  /* Style for the Child Components */
+
   .child-container {
     margin: 10px 0;
     padding: 10px;
@@ -42,4 +41,4 @@
     font-weight: bold;
     color: #555;
   }
-  
+   */
