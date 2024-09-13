@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ArraySerch.css';
+import '../index.css'; 
 
 const ArraySearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,21 +10,22 @@ const ArraySearch = () => {
   );
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center p-6 bg-gray-50 min-h-screen">
       <input
         type="text"
         placeholder="Search..."
         onChange={(e) => setSearchTerm(e.target.value)}
+        className="px-4 py-2 border border-gray-300 rounded-lg shadow-sm mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       {filteredItems.length > 0 ? (
-        <ul>
+        <ul className="list-disc list-inside">
           {filteredItems.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="text-lg text-gray-800 mb-2">{item}</li>
           ))}
         </ul>
       ) : (
-        <div>{alert`No results found`}</div>
-    )}
+        <div className="text-red-500 font-medium">No results found</div>
+      )}
     </div>
   );
 };

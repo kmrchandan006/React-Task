@@ -5,36 +5,38 @@ import Counter from './Counter';
 import ArraySerch from './ArraySerch';
 import ParentComponent from './ParentComponent';
 import { useNavigate } from 'react-router-dom';
+import Enable from './Enable';
+import '../index.css'; 
 
-function HomePage(){
+function HomePage() {
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // Navigate to user with ID 5
     navigate('/HomePage');
-    // navigate('/SumTwoNumbers');
-    // navigate('/ShowAndHide');
-    // navigate('/Counter');
-    // navigate('/ArraySerch');
-    // navigate('/ParentComponent');
   };
 
-
   return (
-    <div>
-      <h2>Home Page</h2>
-      <SumTwoNumbers/>
-       <ShowAndHide/>
-       <Counter/>
-       <ArraySerch/>
-       <ParentComponent/>
-      <button onClick={handleClick}>Go to Home Page</button>
-      
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
+      <h2 className="text-3xl font-bold mb-8 text-gray-800">Home Page</h2>
+
+      <div className="grid grid-cols-1 gap-6 w-full max-w-3xl">
+        <SumTwoNumbers />
+        <ShowAndHide />
+        <Counter />
+        <ArraySerch />
+        <ParentComponent />
+        <Enable />
+      </div>
+
+      <button
+        onClick={handleClick}
+        className="mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
+      >
+        Go to Home Page
+      </button>
     </div>
   );
 }
 
 export default HomePage;
-
-  

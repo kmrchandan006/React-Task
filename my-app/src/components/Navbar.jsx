@@ -1,21 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file
+import '../index.css';  // Go one level up to src folder
 
 
 function Navbar() {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/SumTwoNumbers">SumTwoNumbers</Link>
-      <Link to="/Counter">Counter</Link>
-      <Link to="/ArraySerch">ArraySerch</Link>
-      <Link to="/ParentComponent">ParentComponent</Link>
+    <nav className="flex justify-center gap-5 bg-gray-100 p-2.5">
+      <Link
+        to="/"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        Home
+      </Link>
+      <Link
+        to="/SumTwoNumbers"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        SumTwoNumbers
+      </Link>
+      <Link
+        to="/Counter"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        Counter
+      </Link>
+      <Link
+        to="/ArraySerch"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        ArraySerch
+      </Link>
+      <Link
+        to="/ParentComponent"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        ParentComponent
+      </Link>
+      <Link
+        to="/Enable"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        Enable
+      </Link>
       <div>
-        <Link to="/ShowAndHide">ShowAndHide</Link>
+        <Link
+          to="/ShowAndHide"
+          className="text-gray-800 text-lg hover:text-blue-500"
+        >
+          ShowAndHide
+        </Link>
       </div>
     </nav>
   );
 }
 
-export default Navbar; 
+export default Navbar;
