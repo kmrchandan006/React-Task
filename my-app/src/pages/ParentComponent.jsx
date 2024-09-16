@@ -1,38 +1,55 @@
 import React, { useState } from 'react';
-import '../index.css'; 
-// A simple child component
-const ChildComponent = ({ id }) => {
-  return (
-    <div className="p-4 bg-gray-200 rounded-lg shadow-sm mb-2">
-      Child Component {id}
-    </div>
-  );
-};
 
-const ParentComponent = () => {
-  const [children, setChildren] = useState([]);
+function ParentComponent() {
+  // State to hold the list of technologies
+  const [records, setRecords] = useState([]);
 
-  // Add a new child component
-  const addChild = () => {
-    setChildren([...children, { id: children.length + 1 }]);
+  // State to hold the new technology input value
+  const [newTech, setNewTech] = useState('');
+
+  // Function to handle adding a new technology to the list
+  const addTech = () => {
+    if (newTech.trim() !== '') {
+      // Add the new technology to the records list
+      setRecords([...records, newTech]);
+      // Clear the input field
+      setNewTech('');
+    }
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Parent Component</h2>
-      <button
-        onClick={addChild}
-        className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
-      >
-        Add Child
-      </button>
-      <div className="mt-4 space-y-2">
-        {children.map((child) => (
-          <ChildComponent key={child.id} id={child.id} />
+    <li className="p-4 bg-blue-50 rounded-lg text-gray-800 border border-blue-300 shadow-md">
+      <h3 className="font-semibold text-lg mb-2">
+        Dynamically Add Child Components
+      </h3>
+
+      {/* Display the list of technologies */}
+      <ul className="list-none mb-4">
+        {records.map((record, index) => (
+          <li key={index} className="text-blue-600 py-1">
+            {record}
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+
+      {/* Input to enter new technology */}
+      <input
+        className="w-full p-2 border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+        type="text"
+        value={newTech}
+        onChange={(e) => setNewTech(e.target.value)}
+        placeholder="Enter new technology"
+      />
+
+      {/* Button to add new technology */}
+      <button
+        className="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+        onClick={addTech}
+      >
+        Add Child Components
+      </button>
+    </li>
   );
-};
+}
 
 export default ParentComponent;

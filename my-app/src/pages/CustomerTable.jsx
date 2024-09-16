@@ -39,7 +39,7 @@ function CustomerTable() {
   };
 
   return (
-    <div className="h-96 w-full p-6 bg-gray-50 rounded-lg shadow-lg">
+    <div className="h-96 w-full p-6 bg-gray-100 rounded-lg shadow-lg">
       <div className="flex justify-between items-center mb-4">
         <div className="w-72">
           <TextField
@@ -48,7 +48,7 @@ function CustomerTable() {
             value={searchText}
             onChange={handleSearch}
             fullWidth
-            className="bg-white rounded-lg"
+            className="bg-white rounded-lg shadow-sm"
             InputProps={{
               classes: {
                 notchedOutline: 'border-gray-300',
@@ -65,7 +65,7 @@ function CustomerTable() {
           components={{ Toolbar: GridToolbar }}
           checkboxSelection
           disableSelectionOnClick
-          className="bg-white shadow-lg rounded-lg border border-gray-200"
+          className="bg-white rounded-lg shadow-lg border border-gray-200"
         />
       </div>
     </div>

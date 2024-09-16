@@ -9,6 +9,11 @@ function Navbar() {
     setSidebarVisible(!isSidebarVisible);
   };
 
+  // Function to hide sidebar when a link is clicked
+  const handleLinkClick = () => {
+    setSidebarVisible(false); // Hide sidebar after clicking a link
+  };
+
   return (
     <div className="relative">
       {/* Navbar */}
@@ -28,7 +33,7 @@ function Navbar() {
           onClick={toggleSidebar}
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none"
         >
-          {isSidebarVisible ? 'Hide Menu' : 'Show Menu'}
+          {isSidebarVisible ? 'Hide Task' : 'View Task'}
         </button>
       </nav>
 
@@ -39,42 +44,42 @@ function Navbar() {
       >
         <ul className="mt-10 space-y-4 p-4">
           <li>
-            <Link to="/" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               HomePage
             </Link>
           </li>
           <li>
-            <Link to="/SumTwoNumbers" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/SumTwoNumbers" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               SumTwoNumbers
             </Link>
           </li>
           <li>
-            <Link to="/Counter" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/Counter" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               Counter
             </Link>
           </li>
           <li>
-            <Link to="/ArraySerch" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/ArraySerch" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               ArraySerch
             </Link>
           </li>
           <li>
-            <Link to="/ParentComponent" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/ParentComponent" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               ParentComponent
             </Link>
           </li>
           <li>
-            <Link to="/Enable" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/Enable" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               Enable
             </Link>
           </li>
           <li>
-            <Link to="/CustomerTable" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/CustomerTable" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               CustomerTable
             </Link>
           </li>
           <li>
-            <Link to="/DragDropTask" className="text-gray-800 text-lg hover:text-blue-500">
+            <Link to="/DragDropTask" className="text-gray-800 text-lg hover:text-blue-500" onClick={handleLinkClick}>
               DragDropTask
             </Link>
           </li>
