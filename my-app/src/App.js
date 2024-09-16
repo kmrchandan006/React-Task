@@ -8,18 +8,18 @@ import ParentComponent from './pages/ParentComponent';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage'; // Assuming you have a HomePage component
 import Enable from './pages/Enable';
-
+import CustomerTable from './pages/CustomerTable';
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} /> {/* Home 
-        Page */}
+        <Route path="/" element={<HomePage />} />  
         <Route path="/Enable" element={<Enable/>}></Route>
-        <Route path="/Counter" element={<Counter />} /> {/* Counter page */}
-        <Route path="/SumTwoNumbers" element={<SumTwoNumbers />} /> {/* SumTwoNumbers page */}
-        <Route path="/ParentComponent" element={<ParentComponent />} /> {/* Dynamic route with user id */}
+        <Route path="/Counter" element={<Counter />} />  
+        <Route path="/SumTwoNumbers" element={<SumTwoNumbers />} />  
+        <Route path="/ParentComponent" element={<ParentComponent />} />
+        <Route path="/CustomerTable" element={<CustomerTable/>} />
         
         {/* Nested route example */}
         <Route path="/ArraySerch" element={<ArraySerch />}>

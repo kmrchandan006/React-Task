@@ -6,6 +6,7 @@ import ArraySerch from './ArraySerch';
 import ParentComponent from './ParentComponent';
 import { useNavigate } from 'react-router-dom';
 import Enable from './Enable';
+import CustomerTable from './CustomerTable';
 import '../index.css'; 
 
 function HomePage() {
@@ -26,6 +27,7 @@ function HomePage() {
         <Counter />
         <ArraySerch />
         <ParentComponent />
+        <CustomerTable/>
         <Enable />
       </div>
 

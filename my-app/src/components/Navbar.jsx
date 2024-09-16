@@ -42,6 +42,14 @@ function Navbar() {
       >
         Enable
       </Link>
+
+      <Link
+        to="/CustomerTable"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        CustomerTable
+      </Link>
+
       <div>
         <Link
           to="/ShowAndHide"

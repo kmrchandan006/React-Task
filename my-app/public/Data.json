@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "customer": "Rahul Wyman",
+      "lastSeen": "08/08/2020",
+      "orders": 3,
+      "totalSpent": "647.91",
+      "latestPurchase": "07/06/2020",
+      "news": false,
+      "segments": "Regular"
+    },
+    {
+      "id": 2,
+      "customer": "Arjun Tromp",
+      "lastSeen": "08/08/2020",
+      "orders": 0,
+      "totalSpent": "0.00",
+      "latestPurchase": "N/A",
+      "news": true,
+      "segments": "Regular"
+    },
+    {
+      "id": 3,
+      "customer": "Robin Roob",
+      "lastSeen": "09/08/2020",
+      "orders": 1,
+      "totalSpent": "99.99",
+      "latestPurchase": "08/08/2020",
+      "news": false,
+      "segments": "Premium"
+    },
+    {
+      "id": 4,
+      "customer": "Rashawn Beer",
+      "lastSeen": "09/05/2020",
+      "orders": 4,
+      "totalSpent": "693.50",
+      "latestPurchase": "10/03/2019",
+      "news": true,
+      "segments": "Frequent"
+    },
+    {
+      "id": 5,
+      "customer": "Harsh Hodge",
+      "lastSeen": "10/05/2020",
+      "orders": 2,
+      "totalSpent": "300.45",
+      "latestPurchase": "12/04/2020",
+      "news": false,
+      "segments": "Reviewer"
+    },
+    {
+      "id": 6,
+      "customer": "Anita Green",
+      "lastSeen": "11/09/2020",
+      "orders": 3,
+      "totalSpent": "457.22",
+      "latestPurchase": "13/08/2020",
+      "news": true,
+      "segments": "Collector"
+    },
+    {
+      "id": 6,
+      "customer": "Mohit Kumar",
+      "lastSeen": "11/09/2020",
+      "orders": 3,
+      "totalSpent": "458.22",
+      "latestPurchase": "16/09/2020",
+      "news": true,
+      "segments": "Collector"
+    }
+  ]
+  
