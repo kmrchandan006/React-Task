@@ -21,6 +21,17 @@ function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
       <h2 className="text-3xl font-bold mb-8 text-gray-800">Home Page</h2>
+     <div>
+
+     {/* <Typed
+            className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
+            strings={['Home Page', 'Web Development', 'Ethical Hacking']}
+            typeSpeed={120}
+            backSpeed={140}
+            loop
+          /> */}
+
+     </div>
 
       <div className="grid grid-cols-1 gap-6 w-full max-w-3xl">
         <SumTwoNumbers />
