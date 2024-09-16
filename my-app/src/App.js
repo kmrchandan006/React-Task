@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage'; // Assuming you have a HomePage component
 import Enable from './pages/Enable';
 import CustomerTable from './pages/CustomerTable';
+import DragDropTask from './pages/DragDropTask';
+
 function App() {
   return (
     <Router>
@@ -20,11 +22,12 @@ function App() {
         <Route path="/SumTwoNumbers" element={<SumTwoNumbers />} />  
         <Route path="/ParentComponent" element={<ParentComponent />} />
         <Route path="/CustomerTable" element={<CustomerTable/>} />
+
+        <Route path="/DragDropTask" element={<DragDropTask/>} />
         
         {/* Nested route example */}
         <Route path="/ArraySerch" element={<ArraySerch />}>
-       
-          <Route path="ShowAndHide" element={<ShowAndHide />} /> {/* Nested profile route */}
+        <Route path="ShowAndHide" element={<ShowAndHide />} />
         </Route>
       </Routes>
     </Router>

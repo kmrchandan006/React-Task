@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import Enable from './Enable';
 import CustomerTable from './CustomerTable';
 import '../index.css'; 
+import DragDropTask from './DragDropTask';
 
 function HomePage() {
 
@@ -29,6 +30,7 @@ function HomePage() {
         <ParentComponent />
         <CustomerTable/>
         <Enable />
+        <DragDropTask/>
       </div>
 
       <button

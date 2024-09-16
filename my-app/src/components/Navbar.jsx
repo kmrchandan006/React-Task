@@ -50,6 +50,13 @@ function Navbar() {
         CustomerTable
       </Link>
 
+      <Link
+        to="/DragDropTask"
+        className="text-gray-800 text-lg hover:text-blue-500"
+      >
+        DragDropTask
+      </Link>
+
       <div>
         <Link
           to="/ShowAndHide"
