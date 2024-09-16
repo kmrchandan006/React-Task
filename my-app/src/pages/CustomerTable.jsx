@@ -30,7 +30,11 @@ function CustomerTable() {
     const value = event.target.value.toLowerCase();
     setSearchText(value);
     setFilteredRows(
-      rows.filter((row) => row.customer.toLowerCase().includes(value))
+      rows.filter((row) =>
+        Object.values(row).some((field) =>
+          field?.toString().toLowerCase().includes(value)
+        )
+      )
     );
   };
 
